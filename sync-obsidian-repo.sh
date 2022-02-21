@@ -2,7 +2,7 @@
 
 REPO_DIR=~/.obsidian-repo
 VAULT_DIR=~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Silverwing/
-DATE_TIME=$(date "+%Y-%m-%d +%H-%M-%S")
+DATE_TIME=$(date "+%Y-%m-%d %H-%M-%S")
 
 # Create folder if it doesnt exist
 if [ ! -d "$REPO_DIR" ]; then
