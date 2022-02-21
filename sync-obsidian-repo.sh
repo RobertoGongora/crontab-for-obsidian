@@ -6,9 +6,7 @@ DATE_TIME=$(date "+%Y-%m-%d %H-%M-%S")
 
 # Create folder if it doesnt exist
 if [ ! -d "$REPO_DIR" ]; then
-    mkdir -p $REPO_DIR
-    git init --bare $REPO_DIR
-    git --git-dir="$REPO_DIR" --work-tree="$VAULT_DIR" remote add origin https://github.com/RobertoGongora/obsidian-repo.git
+    git pull https://github.com/RobertoGongora/obsidian-repo.git $REPO_DIR
 fi
 
 # Add the vault folder to the repo
